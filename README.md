@@ -1,53 +1,12 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-## Codeanywhere Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Gitpod Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Gitpod Template Instructions at least once, though! It contains some important information about Gitpod and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
+# Heritage Housing Issues
 
 
-## Cloud IDE Reminders
+The objective of this project is to utilize Data Analytics and Machine Learning techniques to preprocess and refine data for an ML Model. The model aims to predict the value of houses in Ames, Iowa while also providing visual representations of the crucial features taken into account for accurate predictions.
 
-To log into the Heroku toolbelt CLI:
+The live project is found here.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Using the **CRISP-DM** methodology, I will outline the steps involved in accomplishing this project.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
@@ -85,12 +44,15 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 
 ## Business Requirements
-As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
 
-Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
+This project showcases the utilization of publicly available datasets to develop effective Machine Learning tools for market analysis, enabling informed decision-making.
+
+Luke Van Holten, a good friend of mine who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, has requested to help him in maximising the sales price for the inherited properties.
+
+Although my friend has an excellent understanding of property prices in his own state and residential area, he fears that basing his estimates for property worth on his current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where he comes from might not be the same in Ames, Iowa. He found a public dataset with house prices for Ames, Iowa, and provided me with that.
 
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
-* 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+* 2 - The client is interested in predicting the house sale price from his four inherited houses and any other house in Ames, Iowa.
 
 
 ## Hypothesis and how to validate?
@@ -98,7 +60,20 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+* **Business Requirement 1:** Data Visualization and Correlation Study
+    * As a client I want to inspect the data related to the house records, so that I can dicscover how the house attributes correlate with the sale price.
+    * As a client I want to conduct a correlation study (Pearson and Spearman) to understand better how the variables are correlated to Sale Price, so that I can discover how the house attributes correlate sith the sale price.
+    * As a client I want to plot the main variables against Sale Price to visualize insights, so that I can discover how the house attributes correlate sith the sale price.
+
+* **Business Requirements 2:** Sales Price Prediction
+    * As a client I want to predict the sale price for a given house. We want to build a ML model, so that the client can predict the house sale price from her 4 inherited houses, and any other house in Ames, Iowa.
+
+
+To achieve this objective, we will develop a ML system capable of accurately predicting the combined sales price of the four inherited houses. This will be accomplished through the implementation of either conventional ML techniques or Neural Networks, which will effectively capture the relationships between the features and the target variable.
+
+As per our agreement with the client, a minimum R2 score of 0.75 is expected on both the train set and the test set, ensuring the reliability and accuracy of the predictions.
+
+The data will be thoroughly explained and visualized using a dashboard, eliminating the need for an API in this project.
 
 
 ## ML Business Case
@@ -136,19 +111,6 @@ Although your friend has an excellent understanding of property prices in her ow
 
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
 
 ## Acknowledgements (optional)
 * In case you would like to thank the people that provided support through this project.
