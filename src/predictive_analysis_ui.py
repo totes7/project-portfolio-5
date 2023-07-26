@@ -9,4 +9,4 @@ def predict_sale_price(X_live, features, pipeline):
     # predict
     sale_price_prediction = pipeline.predict(X_live_sale_price)
 
-    return sale_price_prediction
+    return float(sale_price_prediction.round(2))
