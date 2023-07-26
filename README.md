@@ -56,7 +56,11 @@ Although my friend has an excellent understanding of property prices in his own 
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+* 1 -  We can predict the sales price for any house in Ames iowa. 
+    * By analysing the database records of the real state transactions made in Ames, state of Iowa, we can predict a sales price for a particular house
+
+* 2 - Some house attributes will affect the price more than others.
+    * Size of the ground floor, living area, the basement and garage affect and help determine prices, by analysing historic information from the dataset we will find a guide to fit a price range for our customer's properties.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
