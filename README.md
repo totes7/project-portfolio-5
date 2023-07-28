@@ -15,7 +15,7 @@ Using the **CRISP-DM** methodology, I will outline the steps involved in accompl
 - [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
 - [ML Business Case](#ml-business-case)
 - [Dashboard Design](#dashboard-design)
-- [Bugs](#bugs)
+- [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 - [Credits](#credits)
@@ -102,12 +102,43 @@ The data will be thoroughly explained and visualized using a dashboard, eliminat
 
 * The dashboard was created using Streamlit and is made up of 5 pages.
 
+### Page 1: Project Summary
 
+* Project Terms and Jargons
+* Project Dataset
+* Business Requirements
 
+### Page 2: Sales Price Study
 
+* State business requirement 1
+* Checkbox: data inspection on dataset
+* Display the most correlated variables to sale price
+* Conclusions from correlation study
+* Checkbox: scatterplots of correlated variables against sell price
+
+### Page 3: Predict House Price
+
+* State business requirement 2
+* Inherited houses price prediction
+* House price predictor
+
+### Page 4: Project Hypothesis and Validations
+
+Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
+
+* Size, overall quality and year of construction affect the final sale price, with larger houses with better quality and built more recently having a higher final sale price.
+    * Correct. The correlation study at SalesPriceStudy Notebook supports that.
+
+### Page 5: ML Sale Price Prediction
+
+* Considerations and conclusions after the pipeline is trained
+* Present ML pipeline steps
+* Feature importance
+* Pipeline performance
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+
+* No unfixed bugs found.
 
 ## Deployment
 ### Heroku
@@ -124,14 +155,22 @@ The data will be thoroughly explained and visualized using a dashboard, eliminat
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
+* Python | Main language
+* Numpy | Manage data
+* Pandas | Profile Report
+* Pandas-profiling | Feature analysis
+* Ppscore | Correlation analysis
+* Scikit Learn | ML Pipelines
+* Matplot & Seaborn | Correlation study plots
+* Feature-engine | Feature engineering
+* Streamlit | Dashboard creation
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* The dataset of the housing market is taken from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
 
-## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
+* The Churnometer project was continuously referenced throughout the building of this project.
+
+* The initial repository and part of the README.md file were provided by CodeInstitute.
 
