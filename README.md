@@ -7,6 +7,18 @@ The live project is found here.
 
 Using the **CRISP-DM** methodology, I will outline the steps involved in accomplishing this project.
 
+## CONTENTS
+
+- [Dataset Content](#dataset-content)
+- [Business Requirements](#business-requirements)
+- [Hypothesis and Validation](#hypothesis-and-validation)
+- [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+- [ML Business Case](#ml-business-case)
+- [Dashboard Design](#dashboard-design)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+- [Credits](#credits)
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
@@ -81,12 +93,16 @@ The data will be thoroughly explained and visualized using a dashboard, eliminat
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* The goal is to develop a Machine Learning (ML) model that can predict and illustrate the sales prices of houses, specifically focusing on a set of four inherited houses and other properties within the vicinity of Ames.
+* Given that the Sale Price of houses is a continuous variable, a Supervised Regressor Model is deemed appropriate for this prediction task.
+* Ultimately, we aim to empower our client to uncover the relationships between different house attributes and the corresponding sale prices.
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+
+* The dashboard was created using Streamlit and is made up of 5 pages.
+
+
 
 
 
